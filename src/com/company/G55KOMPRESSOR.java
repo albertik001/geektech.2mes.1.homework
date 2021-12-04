@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public final class G55KOMPRESSOR extends Car {
     private int tire;
     private String tires;
@@ -11,14 +13,21 @@ public final class G55KOMPRESSOR extends Car {
     public String getTires() {
         return tires;
     }
-
-    public G55KOMPRESSOR(String name, String address, String testdrive, String shassi, String dvijok, int rashod, int tire, String tires, ColorConsole colorConsole) {
-        super(name, address, testdrive, shassi, dvijok, rashod, colorConsole);
+    public void popkorn (String srabotal,String vyhlop) {
+        Random random = new Random();
+        int srt = random.nextInt(5000);
+        if (srt >= 4000) {
+            System.out.print(srabotal);
+            System.out.println(vyhlop);
+        }
+    }
+    public G55KOMPRESSOR(String model, String address, String testdrive, String shassi, String dvijok, int rashodna100, int tire, String tires, ColorConsole colorConsole) {
+        super(model, address, testdrive, shassi, dvijok, rashodna100, colorConsole);
         this.tire = tire;
         this.tires = tires;
     }
     public String getInfo() {
-        return "Name: " + getName() +
+        return "Name: " + getModel() +
                 "\nShassi: " + getShassi() +
                 "\nDvijok: " + getDvijok() +
                 "\nRashod: " + getRashod() +

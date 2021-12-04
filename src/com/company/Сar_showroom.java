@@ -1,8 +1,8 @@
 package com.company;
 
 public class Сar_showroom {
-    public String getName() {
-        return name;
+    public String getModel() {
+        return model;
     }
 
     public String getAddress() {
@@ -13,12 +13,12 @@ public class Сar_showroom {
         return testdrive;
     }
 
-    private String name;
+    private String model;
     private String address;
     private ColorConsole colorConsole;
 
-    public Сar_showroom(String name, String address, String testdrive, ColorConsole colorConsole) {
-        this.name = name;
+    public Сar_showroom(String model, String address, String testdrive, ColorConsole colorConsole) {
+        this.model = model;
         this.address = address;
         this.testdrive = testdrive;
         this.colorConsole = colorConsole;
@@ -32,7 +32,7 @@ public class Сar_showroom {
 
     public String getInfo() {
         return "Test drive: " + "\nColor: " + colorConsole +
-                "\nCar showroom name: " + name +
+                "\nCar showroom name: " + model +
                 "\nCar showroom address: " + address;
 
     }

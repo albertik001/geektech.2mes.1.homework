@@ -19,15 +19,15 @@ public class Car extends Сar_showroom {
     }
 
 
-    public Car(String name, String address, String testdrive, String shassi, String dvijok, int rashod, ColorConsole colorConsole) {
-        super(name, address, testdrive, colorConsole );
+    public Car(String model, String address, String testdrive, String shassi, String dvijok, int rashodna100, ColorConsole colorConsole) {
+        super(model, address, testdrive, colorConsole );
         this.shassi = shassi;
         this.dvijok = dvijok;
-        this.rashod = rashod;
+        this.rashod = rashodna100;
     }
 
-    public Car(String name, String address, String testdrive, ColorConsole colorConsole) {
-        super(name, address, testdrive,colorConsole );
+    public Car(String model, String address, String testdrive, ColorConsole colorConsole) {
+        super(model, address, testdrive,colorConsole );
     }
     public void avtosignal(String signal){
         System.out.println(signal);
@@ -38,11 +38,11 @@ public class Car extends Сar_showroom {
         }
     }
     public String getInfo() {
-        return "Name: " + getName() +
+        return "Name: " + getModel() +
                 "\nShassi: " + shassi +
                 "\nDvijok: " + dvijok +
                 "\nRashod: " + rashod +
-                "\nName: " + getName() +
+                "\nName: " + getModel() +
                 "\nAddress: " + getAddress() +
                 "\nTestDrive: " + getTestdrive() +
                 "\nColor: " + getColorConsole();
